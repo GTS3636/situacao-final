@@ -100,9 +100,9 @@ h1{
     background-color: lightblue;
     font-family: 'Times New Roman', Times, serif;
 }
-button{
-    border: none;
-    font-size: 2.2rem;
+#ordenar, #ordenar2{
+    border-radius: 10px;
+    font-size: 1.5rem;
 }
 .Contato{
     text-align: center;
