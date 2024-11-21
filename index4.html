@@ -9,38 +9,76 @@
 </head>
 <body>
 
-<div class="navega">
-    <nav>
-        <img id="logo" src="lampada-logo.png" alt="">
-        <h1>GTS: Grand Tester Support</h1>
-        <a id="inicio" href="index.html">Home Inicial</a>
-        <a href="index2.html">Eletroeletrônica</a>
-        <a href="index4.html">Banco de Dados</a>
-        <a href="index5.html">Códigos Exemplares</a>
-        <a href="index6.html">Redes</a>
-    </nav>
-</div>
-    <article><hr>
-        <h1>Banco de Dados</h1><hr>
-        <p>Ofeecemos diversos serviços relacionados a banco de dados, utilizando o MySQL da Oracle como SGBD (Sistema de Gerenciamento de Banco de dados), produzimos, configuramos e conectamos seus servidores aos demais dispositivos de sua empresa.Não tem problema se você conhece ou não como funciona a construção do banco, nós iremos o ajudar lhe mostrando o modelo conceitual em fluxogramas, onde podemos discutir nossas ideias para criar um banco conforme o seus requerimentos de forma coerente e produtiva. <br><br> 
-        
-        Temos alguns exemplos de modelos passados que fizemos que podem o ajudar a entender melhor a parte conceitual de nossos projetos:</p>
-        <br><br>
-            <div>
-                <img src="" alt=""><br>
-                <small>Modelagem de um Banco de Dados para um aeroporto</small>
-            </div>
-
-        <br><hr>
-
-        
-
-        
-
-        
+    <div class="navega">
+        <nav>
+            <img id="logo" src="lampada-logo.png" alt="">
+            <h2>GTS: Grand Tester Support</h2>
+            <a id="inicio" href="index.html">Home Inicial</a>
+            <a href="index2.html">Eletroeletrônica</a>
+            <a href="index4.html">Banco de Dados</a>
+            <a href="index5.html">Códigos e Algortítmos</a>
+            <a href="index6.html">Redes</a>
+        </nav>
+    </div>
+    <article>
+        <hr>
+        <h1>Banco de Dados</h1>
+        <hr>
+        <p>Ofeecemos diversos serviços relacionados a banco de dados, utilizando o MySQL da Oracle como SGBD (Sistema de Gerenciamento de Banco de dados), produzimos, configuramos e conectamos seus servidores aos demais dispositivos de sua empresa. Não tem problema se você conhece ou não como funciona a construção do banco, nós iremos o ajudar lhe mostrando o modelo conceitual em fluxogramas, onde podemos discutir nossas ideias para criar um banco conforme o seus requerimentos de forma coerente e produtiva. 
+        </p>
+        <hr>
+        <h1>O que é um Banco de Dados?</h1>
+        <p>
+            Um banco de dados é uma coleção estruturada de dados que é armazenada e gerenciada de forma a permitir fácil acesso, manipulação e gerenciamento das informações. Ele é utilizado em uma ampla variedade de aplicações, desde sistemas de gestão empresarial até aplicativos web, e é fundamental para o armazenamento de dados de forma organizada. Os principais componentes de um banco de dados incluem os dados em si, que podem ser textos, números, imagens, entre outros; o Sistema de Gerenciamento de Banco de Dados (SGBD), que é um software que permite a criação, manipulação e gerenciamento dos dados, por exemplo MySQL; o esquema conceitual, que define como os dados são organizados usando fluxogramas, incluindo tabelas, identidades e relacionamentos; e as consultas, que são realizadas por meio de linguagens de consulta, como SQL (Structured Query Language), permitindo operações como inserção, atualização, exclusão e consulta de dados.
+                <br><br>
+            O SQL é uma linguagem de programação que permite a manipulação de dados em um banco de dados relacionais, auxiliando na execução de consultas, inserções, atualizações e exclusões de dados. Os Bancos de Dados relacionais são projetados para armazenar e gerenciar dados em forma de tabelas, onde cada linha representa uma entidade e cada coluna representa um atributo dessa entidade. Esta maneira de criação e gerenciamento de Banco de Dados é uma das mais utilizadas hoje em dia por sua versatilidade e flexibilidade.
+                <br><br>
+            Pelo outro lado, Banco de Dados não relacionais, ou NoSQL, são projetados para armazenar e gerenciar dados em forma de documentos, grafos, colunas, entre outros; sendo mais utilizados no gerenciamento de grandes quantidades de arquivos soltos, como Big Data. Eles são mais flexíveis e escaláveis do que os Bancos de Dados relacionais, mas podem ser mais difíceis de gerenciar e manter. Os Bancos de Dados NoSQL são projetados para lidar com grandes volumes de dados não estruturados, como imagens, vídeos e textos. Alguns SGBD 's utilizadores são: Cassandra e MondoDB.
+                <br><br>
+            Em nossa empresa, utilizaremos o MySQL da Oracle como SGBD para trabalhar em estruturação relacional dos bancos e a MongoDB para trabalhos em NoSQL.
+        </p>
+        <hr>
+        <h1>Processos de criação de um Banco de Dados</h1>
+        <p>
+        Para que você possa entender melhor como funciona o processo até a criação do Banco de Dados, iremos explicar as etapas de visualização conceitual, lógica e por fim a implementação física no software/servidor. 
+            <br><br>
+        Começando com o MER, iremos criá-lo a partir de um floxugrama para que você possa entender as ligações dos componentes e identidades presentes dentro do Banco, ali iremos esclarecer tudo que irá ser implementado: tabelas, campos, tipos de dados, relacionamentos, índices, etc. Os relacionamentos dentro do Banco de Dados podem variar entre as identidades presentes, pois depende do contexto presente, mas sempre irão ter um padrão: 
+            <br><br>
+        Relacionamentos de 1 para 1 são aqueles que somente uma identidade pode ter algo de uma outra identidade, exemplo: um filme pode somente ter uma locação. (1,1)
+            <br><br>
+        Relacionamentos de 1 para muitos são aqueles que uma identidade pode ter mais de um vindo de outra identidade, exemplo: uma locação pode ter 1 ou mais de 1 filme. (1,n)
+            <br><br>
+        Relacionamentos de muitos para 1 são aqueles que muitas identidades podem ter uma única identidade, exemplo: um ator pode ter participado de 1 ou mais filmes enquanto o filme pode ter só uma participação daquele ator. (n,1)
+            <br><br>
+        Relacionamentos de muitos para muitos são aqueles que muitas identidades podem ter muitas identidades, exemplo: um filme pode ter mais de 1 ator e um ator pode ter participado de mais de 1 filme. (n,n)
+            <br><br>
+        Relacionamentos de 1 para 0 são aqueles que uma identidade pode ter 0 identidades, exemplo: um filme pode não ter locação. (1,0)
+            <br><br>
+        Relacionamentos de 0 para muitos são aqueles que 0 identidades podem ter muitas identidades, exemplo: um filme pode não ter atores, enquanto atores podem ter vários filmes. (0,n)
+            <br><br>
+        Relacionamentos de 0 para 1 são aqueles que 0 identidades podem ter 1 identidade, exemplo: um filme pode não ter uma exibição no cinema, mas o cinema precisa de uma exibição de filme. (0,1) 
+            <br><br> 
+        Os tipos de dados implementados também tem definição própria, caracterizados entre: DATE (3 Bytes), DATETIME (8 Bytes), TIME (3 Bytes), TIMESTAMP (4 Bytes), YEAR (1 Byte), TINYBLOB (1 Byte + dados), BLOB (2 Bytes + dados), dentre outras caracterizações específicas.
+        </p>
+        <div>
+            <img src="exemploMERprof.png" alt="Exemplo de Fluxogramas MER"><br><small>Exemplo de Fluxogramas MER</small>
+        </div>
+        <hr>
+        <p>
+            Após isso, partiremos para o DER, onde será passado as informações fornecidas por você, cliente, por um dicionário de dados para que os custos de utilização e produção dos serviços sejam condizentes com as suas necessidades. Um exemplo: dados que sejam pequenos são mais utilizados com a denominação TINYINT, que caracteriza dados de até 255 bytes, mas campos que necessitam de mais dados podem usar o BIGINT, que caracteriza dados de até 18.446.744.073.708 bytes de informação ou 18,44 Terabytes.
+        </p>
+        <div>
+            <img src="exemploDERprof.png" alt=""><br><small>Exemplo de tabela DER</small>
+        </div>
+        <p>
+            Ao final, iremos integrar no modelo Físico, onde iremos utilizar o software MySQL para integrar o código ao seu servidor físico e gerenciar os dados recebidos via internet ou ethernet.
+        </p>
+        <div>
+            <img src="exemploFISICOprof.png" alt=""><br><small>Exemplo de tabela Física</small>
+        </div>
+        <hr>
         <br> 
     </article>
         <footer>Distribuído e licensiado por GTS: Grand Tester Support &reg; &copy;<br>Programador-chefe: Guilherme Tomaz Silva</footer>
-   
 </body>
 </html>

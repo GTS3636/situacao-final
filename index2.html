@@ -9,39 +9,111 @@
 </head>
 <body>
 
-<div class="navega">
-    <nav>
-        <img id="logo" src="img/lampada-logo.png" alt="">
-        <h2>GTS: Grand Tester Support</h2>
-        <a id="inicio" href="index.html">Home Inicial</a>
-        <a href="index2.html">Eletroeletrônica</a>
-        <a href="index4.html">Banco de Dados</a>
-        <a href="index5.html">Códigos Exemplares</a>
-        <a href="index6.html">Redes</a>
-    </nav>
-</div>
-    <article><hr>
+    <div class="navega">
+        <nav>
+            <img id="logo" src="lampada-logo.png" alt="">
+            <h2>GTS: Grand Tester Support</h2>
+            <a id="inicio" href="index.html">Home Inicial</a>
+            <a href="index2.html">Eletroeletrônica</a>
+            <a href="index4.html">Banco de Dados</a>
+            <a href="index5.html">Códigos e Algortítmos</a>
+            <a href="index6.html">Redes</a>
+        </nav>
+    </div>
+    <article>
+        <hr>
+        <h1>Lei de Ohm</h1>
+        <p>
+            A Lei de Ohm, formulada pelo físico alemão Georg Simon Ohm, estabelece uma relação fundamental entre três grandezas elétricas fundamentais: tensão (V), corrente elétrica (I) e resistência elétrica (R). Essa lei nos permite entender como a corrente elétrica flui através de um circuito e como os componentes eletrônicos interagem entre si.
+                <br><br>
+            Por exemplo, em um condutor mantido à temperatura constante, a intensidade da corrente elétrica (I) que o atravessa é diretamente proporcional à tensão elétrica (V) aplicada entre seus terminais e inversamente proporcional à sua resistência elétrica (R), resumidamente, I = V e V/R, como também R = V e V/I, e por fim, V = I*R. Essa função matemática pode ser entendida melhor utilizando a Pirâmide de Ohm, a qual explica de modo simplificado e abstrato as relações que as grandezas têm entre si. 
+        </p>
+                <br><br>
+            <div>
+                <img src="piramideOhm.png" alt="Pirâmide da Lei de Ohm">
+            </div>
+                <br><br>
+        <p>
+            Essa função matemática nos ajuda a calcular e desvendar grandezas de uma corrente elétrica caso seja necessário produzir um circuito elétrico sem que haja a queima de algum componente elétrico antes mesmo que o circuito seja testado. Logo, podemos saber que, se a corrente elétrica tende ser = 2,2 v tendo uma entrada de 5,0 volts, a resistência terá de ser 11 ohm 's, pois 2,2 = 5/x, trazemos o 5 dividindo para multiplicar pelo 2,2 e teremos que x = 11.
+        </p>
+        <hr>
+        <h1>O que é um resistor?</h1>
+        <p>
+            Os resistores são componentes eletrônicos que podem ter tamanhos microscópicos até de um grão de ervilha. Este componente serve para criar uma resistência contra a tensão da corrente, calibrando a saída para que não queime outros componentes pela carga excessiva de energia, como o queimar de LED 's caso ultrapasse 3 volts, dependendo da cor. Os resistores podem ter tensões diferentes conforme a lei de Ohm para regular a corrente, e por isso possuem cores de identificação na sua lateral, divididas em 4 faixas geralmente, podendo chegar até 5 caso precise ser mais específico. 
+        </p>
+                <br><br>
+            <div>
+                <img src="tabelaResistor.png" alt="Tabela Resistores">
+            </div>
+                <br><br>        
+        <p>
+            As 2 primeiras faixas dão o valor primordial de resistência, então um resistor de 10 ohm 's de resistência terá as 2 primeiras faixas como 1° Marrom e 2° Preto. A terceira faixa seria a multiplicação de 0 's para ser usado números maiores, então um resistor de resistência 1000 terá a 3° faixa como Vermelho, contando o 0 da 2° faixa (que é de cor Preta). 
+                <br><br>
+            Por último, a 4° faixa representa a tolerância/faixa de erro que um resistor pode ter, pois os resistores não têm exatamente a resistência que propõe. Normalmente essa tolerância é de 5%, representado com a cor Dourada, existindo resistores bem mais baratos, mas quase extintos, que utilizam a cor Prata de 20%. Essas porcentagem significam o nível de tolerância que o resistor pode ter, logo um resistor de 100 ohm 's com tolerância de cor Dourada pode ter entre 95 e 105 ohms.
+        </p>
+        <hr>
         <h1>O que é um Arduino?</h1>
             <hr>
             <p>O Arduino é uma plataforma de prototipagem eletrônica de código aberto, composta por uma placa de hardware e um ambiente de desenvolvimento integrado (IDE) que permite a programação e a interação com diversos componentes eletrônicos. Desde sua criação, o Arduino se tornou uma ferramenta essencial para entusiastas, educadores e profissionais que desejam explorar o mundo da eletrônica e da programação.
-            <br><br><br>
+                <br><br>
             As placas Arduino são equipadas com microcontroladores que podem ser programados para realizar uma variedade de tarefas, desde simples acendimentos de LEDs até complexos sistemas de automação. A linguagem de programação utilizada é baseada em C/C++, o que facilita o aprendizado e a implementação de projetos.
-            <br><br><br>
+                <br><br>
             Uma das grandes vantagens do Arduino é a sua versatilidade. Com uma vasta gama de módulos e sensores disponíveis, como sensores de temperatura, umidade, movimento, e muitos outros, os usuários podem criar projetos inovadores e personalizados que atendem às suas necessidades específicas. Além disso, a comunidade global de usuários do Arduino oferece uma rica biblioteca de tutoriais, exemplos de código e suporte, tornando o aprendizado ainda mais acessível.
-            <br><br><br>
-            Seja você um iniciante ou um especialista, o Arduino oferece uma porta de entrada para o fascinante mundo da eletrônica e da programação, permitindo que você transforme suas ideias em realidade.</p>
-
-        <hr><h1>Alguns de nossos projetos:</h1><hr>
-        <ul>
+                <br><br>
+            A placa conta com 14 entradas digitais, variando de 0 até 13, e 6 entradas analógicas, variando de A0 até A6. As entradas digitais do Arduino funcionam de modo booleano ou binário, como 0 e 1 (falso ou verdadeiro), sendo somente usadas para enviar ou não sinais de energia na potência de 5 volts para o componente/fio acoplado. 
+        </p>
+                <br>  
+            <div>
+                <img src="placaArduino.png" alt="Placa Arduino" width="300">
+            </div>
+                <br>
+        <p>
+            As entradas analógicas são entradas de dados mais complexas, podendo variar entre 0 até 1023 pontos (relação igual a capacidade de dados que um byte pode ter antes de virar um Kbyte). Essas entradas são utilizadas para recebimento e resposta de sensores para acionamento de outros componentes conforme a lógica aplicada em sua programação.  
+        </p>
+                <br>
+            <div>
+                <img src="saidasPWM.png" alt="Saídas PWM" width="500" height="300">
+            </div>
+                <br>
+        <p>
+            As saídas desses dados complexos podem ser chamadas de PWM, que seria o controle de saída de energia dado pelas entradas presentes no Arduino conforme a intensidade desejada a ser transmitida, auxiliando na precisão de programação de circuitos e sistemas de análise e processamento de dados.
+        </p>
+        <hr>
+        <h1>Alguns de nossos projetos:</h1>
+        <ol>
+            <br><br>
             <li>Medidor de elevação</li>
-            <div><img src="" alt="Medidor de elevação"></div>
+            <div><img src="tinkercadPotencia.png" alt="Medidor de elevação" width="300" height="200"></div><br>
             <li>Sensor de potência</li>
-            <div><img src="" alt="Sensor de potência"></div>
+            <div><img src="tinkercadPotenciaReal.png" alt="Sensor de potência" width="300" height="200"></div><br>
             <li>Contadores</li>
-            <div><img src="" alt="Contadores"></div>
-        </ul><br>
+            <div><img src="tinkercadContador.png" alt="Contadores" width="300" height="200"></div>
+            <li>LED com diodo</li>
+            <div><img src="tinkercadDiodo.png" alt="LED com diodo" width="300" height="200"></div>
+            <br><br>
+        </ol><br>
         <small>Prototipagem no site <a href="https://www.tinkercad.com" target="_blank">Tinker Cad</a></small>
         <br><br>
+        <p>
+            Para que o código desenvolvido na plataforma do Tinker Cad pudesse ser formatado e enviado para o Arduino, foi necessário utilizar a IDE (Integrated Development Enviroment) Arduino, local de programação digitada ao contrário do Tinker Cad, onde a mesma irá compilar o código desenvolvido para a linguagem do Arduino e enviar para a placa a partir de um cabo USB. Uma IDE é o software especializado em programação de alguma linguagem em específico ou geral, sendo um "ambiente" de trabalho para programadores. Alguns exemplos de IDE 's são: Visual Studio Code, Intellij, Pycharm, entre outros exemplos. A seguir, uma demonstração de como é esta IDE:
+        </p>
+        <div>
+            <img src="arduinoIDE.png" alt="IDE do Arduino">
+        </div>
+        <br>
+        <hr>
+        <h1>O que é um multímetro?</h1>
+        <p>
+            Um multímetro é um instrumento de medida eletrônico que combina as funções de vários medidores em um único aparelho. Ele é amplamente utilizado por eletricistas, técnicos eletrônicos e entusiastas de eletrônica para medir diversas grandezas elétricas em circuitos e componentes. 
+                <br><br>
+            O multímetro consegue medir entre as 3 grandezas da Lei de Ohm (corrente elétrica, tensão e resistência) dentro de um circuito, podendo ser selecionado a escala de medição tanto pelo seletor central quanto pela entrada de pinagem. Ele pode ser encontrado em duas versões: Analógica e Digital, não tendo grandes diferenças a não ser a simplicidade de leitura na versão Digital.
+        </p>
+                <br><br>
+            <div>
+                <img src="multimetroDigital.png" alt="multímetro digital"><br><small>Multímetro Digital</small>
+                <img src="multimetroAnalogico.png" alt="multímetro analógico"><br><small>Multímetro Analógico</small>
+            </div>
+                <br><br>
         <hr>
         <small>Para entrar em contato com a empresa, ligue para: (01) 6656-8999 ou envie um email para: grandOficial_suporte@gmail.com</small> 
         <!-- Este email e telefone são meramente ilustrativos, não tente ligar ou enviar mensagens para nenhum dos contatos nesta aba. -->

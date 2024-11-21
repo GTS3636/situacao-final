@@ -9,44 +9,119 @@
     <title>Home Inicial</title>
 </head>
 <body>
-
-<div class="navega">
-    <nav>
-        <img id="logo" src="lampada-logo.png" alt="">
-        <h2>GTS: Grand Tester Support</h2>
-        <div class="link-blocks">
-        <a href="index.html">Home Inicial</a>
-        <a href="index2.html">Eletroeletrônica</a>
-        <a href="index4.html">Banco de Dados</a>
-        <a href="index5.html">Algorítmos Exemplares</a>
-        <a href="index6.html">Redes</a>
-        </div>
-    </nav>
-</div>
+    <div class="navega">
+        <nav>
+            <img id="logo" src="lampada-logo.png" alt="">
+            <h2>GTS: Grand Tester Support</h2>
+            <a id="inicio" href="index.html">Home Inicial</a>
+            <a href="index2.html">Eletroeletrônica</a>
+            <a href="index4.html">Banco de Dados</a>
+            <a href="index5.html">Códigos e Algortítmos</a>
+            <a href="index6.html">Redes</a>
+        </nav>
+    </div>
     <article>
         <hr>
         <h1>Um pouco de nossa programação:</h1>
-        <p>Visando nos integrar no mercado mundial tecnológico com agilidade e proatividade, nossa linguagem base para back-end e HTML dinâmico é o JavaScript, com um conhecimento básico mas necessário para a utilização da placa de prototipagem Arduíno, a linguagem C++. Por isso, queremos demonstrar nossa capacidade de criação de diversos algorítmos nessas duas diferentes linguagens. Um exemplo de nossa programação em JavaScript dinâmico está a seguir:</p><br>
-        <div class="inDiv">
-            <h4>Ordenação de números aleatórios em um Array de modo crescente</h4>
-            <button id="ordenar">Ordenar</button>
+        <p>Visando nos integrar no mercado mundial tecnológico com agilidade e proatividade, nossa linguagem base para back-end e HTML dinâmico é o JavaScript, com um conhecimento avançado na utilização da placa de prototipagem Arduíno, a linguagem C++. Por isso, queremos demonstrar nossa capacidade de criação de diversos algorítmos nessas duas diferentes linguagens. Um exemplo de nossa programação em JavaScript dinâmico está a seguir:</p><br>
+        <div class="grid-container">
+                <div class="grid-item">
+                    <div class="inDiv">
+                        <h4>Ordenação de números aleatórios em um Array de modo crescente</h4>
+                        <button id="ordenar">Ordenar</button>
+                    </div>
+                    <br><br>
+                    <div class="inDiv2">
+                        <h4>Ordenação de números aleatórios em um Array de modo decrescente</h4>
+                        <button id="ordenar2">Ordenar</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="inDiv3">
+                        <h4>Exemplo de uso for:</h4>
+                        <p>Elaborar um programa que crie uma pilha de 1 até 5 e exiba os números na tela e após isso retire-a utilizando o método LIFO (Last In, First Out)</p>
+                        <button id="for">Executar</button>
+                        <br>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="inDiv4">
+                        <h4>Exemplo de uso if/else:</h4>
+                        <p>Digite um número e descubra se é par ou impar:</p>
+                        <input id="num" type="number" placeholder="Digite um número">
+                        <button id="iniciar">Verificar</button>
+                        <br>
+                    </div>
+                </div>
+                    <div class="grid-item">
+                        <div class="inDiv5">
+                            <h4>Exemplo de uso else-if:</h4>
+                            <p>Digite a nota 1 de um aluno:</p>
+                            <input id="num1" type="number" placeholder="Nota 1">
+                            <p>Digite a nota 2 de um aluno:</p>
+                            <input id="num2" type="number" placeholder="Nota 2">
+                            <p>Digite a nota 3 de um aluno:</p>
+                            <input id="num3" type="number" placeholder="Nota 3">
+                            <br><br>
+                            <button id="calculoMedia">Calcular</button>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="inDiv6">
+                            <h4>Ordenação de array 's em Bubble Sort (8, 3, 7, 1, 3, 8, 6, 6, 9):</h4>
+                            <button id="ordenacaoBubble">Ordenar</button>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="inDiv7">
+                            <h4>Ordenação de array 's em Inserction Sort (9, 4, 7, 1, 3, 8, 2, 6, 5):</h4>
+                            <button id="ordenacaoInserction">Ordenar</button>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="inDiv8">
+                            <h4>Ordenação de array 's em Selection Sort (2, 4, 8, 1, 3, 8, 5, 6, 10):</h4>
+                            <button id="ordenacaoSelection">Ordenar</button>
+                            <br>
+                        </div>
+                </div>
+                <div class="grid-item">
+                    <div class="inDiv9">
+                        <h4>Exemplo de uso while:</h4>
+                        <p>Aumento de salário registrado na tela começando com 1000:</p>
+                        <button id="aumentoSalario">Aumentar</button>
+                        <br>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="inDiv10">
+                        <h4>Ordenação de listas/pilhas de modo crescente ou decrescente com números aleatórios:</h4>
+                        <button id="ordenacaoCrescente">Crescente</button>
+                        <br>
+                        <div id="crescente">
 
-        </div>
+                        </div>
+                        <button id="ordenacaoDecrescente">Decrescente</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h1>Fluxogramas</h1>
+            <p>
+                Fluxogramas são representações gráficas de um algoritmo, mostrando as etapas que ele pass a para resolver um problema. Eles são usados para visualizar o fluxo de dados e as decisões tomadas durante o processo de passagem entre as etapas. A sua simbologia é composta por símbolos que representam as operações que o algoritmo realiza , como a entrada de dados, a saída de dados, a decisão, a repetição , a seleção, a atribuição, a soma, a subtração, a multiplicação
+            </p>
         <br><br>
-        <div class="inDiv2">
-            <h4>Ordenaçãode números aleatórios em um Array de modo decrescente</h4>
-            <button id="ordenar2">Ordenar</button>
-        </div>
-    
         <hr>
-        
         <h1>Contato</h1><hr>
         <p id="contato">Programador-chefe: Guilherme Tomaz Silva <br> Telefone: (48) 99672-3858 <br> Email: guilhermesilva81prof@gmail.com</p>
-        <small>Para entrar em contato com a empresa, ligue para: (01) 6656-8999 ou envie um email para: grandOficial_suporte@gmail.com</small> 
+        <small>Para entrar em contato com a empresa, ligue para: (01) 6656-8999 ou envie um email para: grandOficial_suporte@GTSSupport.com</small> 
         <!-- Este email e telefone são meramente ilustrativos, não tente ligar ou enviar mensagens para nenhum dos contatos nesta aba.  -->
         <br> 
     </article>
         <footer>Distribuído e licensiado por GTS: Grand Tester Support &reg; &copy;<br>Programador-chefe: Guilherme Tomaz Silva</footer>
-   
 </body>
 </html>
