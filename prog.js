@@ -339,3 +339,158 @@ ordenacaoDecre.addEventListener("click", ()=>{
         }
         resOrdnDecre.textContent = `Lista ordenada em ordem decrescente: ${lista}`
 })
+
+//<==================================================> 
+//<==================================================> 
+//<==================================================> 
+
+let divisao11 = document.querySelector(".inDiv11")
+let showMatris = document.createElement("div")
+showMatris.setAttribute("class", "showMatriz")
+divisao11.appendChild(showMatris)
+let buttonMatrizPar = document.getElementById("gerarMatrizParImpar")
+
+buttonMatrizPar.addEventListener("click", ()=>{
+    let matriz = [[0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0]]
+    gerarMatriz()
+    function gerarMatriz(){
+        for(let i = 0; i < matriz.length; i++){
+            for(let j = 0; j < matriz[i].length; j++){
+                matriz[i][j] = gerarAleatorioMatriz(10, 0)
+            }
+        }
+        showMatris.textContent += `${matriz}`
+        somaPares()
+    }
+    function gerarAleatorioMatriz(max, min){
+        let valor = Math.floor(Math.random() * (max - min + 1) + min)
+        return valor
+    }
+    function somaPares(){
+        let soma = 0
+        for(let i = 0; i < matriz.length; i++){
+            for(let j = 0; j < matriz[i].length; j++){
+                if(matriz[i][j] % 2 === 0){
+                    soma += matriz[i][j]
+                }
+            }
+        }
+        showMatris.textContent += `Soma dos pares: ${soma}`
+        somaImpares()
+    }
+    function somaImpares(){
+        let soma = 0
+        for(let i = 0; i < matriz.length; i++){
+            for(let j = 0; j < matriz[i].length; j++){
+                if(matriz[i][j] % 2 !== 0){
+                    soma += matriz[i][j]
+               }
+            }
+        }
+        showMatris.textContent += `Soma dos impares: ${soma}`
+    }
+})
+
+//<==================================================> 
+//<==================================================> 
+//<==================================================> 
+
+let divisao12 = document.querySelector(".inDiv12")
+let showMatrizSoma = document.createElement("div")
+showMatrizSoma.setAttribute("class", "showMatrizSoma")
+divisao12.appendChild(showMatrizSoma)
+let buttonSomaMatriz = document.getElementById("somarMatrizes")
+
+buttonSomaMatriz.addEventListener("click", ()=>{
+    let matriz1 = [[0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0]]
+
+    let matriz2 = [[0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0]]
+
+    let matriz3 = [[0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0]]
+
+                gerarMatrizes()
+
+    function gerarMatrizes(){
+        for(let i = 0; i < matriz1.length; i++){
+            for(let j = 0; j < matriz1.length; j++){
+                matriz1[i][j] = gerarMatrizesalatorio(10, 0)
+                matriz2[i][j] = gerarMatrizesalatorio(10, 0)
+            }
+        }
+        somarMatrizes()
+    }
+    function gerarMatrizesalatorio(max, min){
+        let valor = Math.floor(Math.random() * (max - min + 1) + min)
+        return valor
+    }
+    function somarMatrizes(){
+        for(let i = 0; i < matriz1.length; i++){
+            for(let j = 0; j < matriz1.length; j++){
+                matriz3[i][j] = matriz1[i][j] + matriz2[i][j]
+            }
+        }
+        showMatrizSoma.textContent = `A soma das matrizes é: ${matriz3}`
+    }
+})
+
+//<==================================================> 
+//<==================================================> 
+//<==================================================>
+
+let divisao13 = document.querySelector(".inDiv13")
+let showMatrizDivi = document.createElement("div")
+showMatrizDivi.setAttribute("class", "showMatrizDivi")
+divisao13.appendChild(showMatrizDivi)
+let showResu = document.createElement("div")
+showResu.setAttribute("class", "showResu")
+divisao13.appendChild(showResu)
+let buttonGerarVerificar = document.getElementById("gerarVerif")
+
+buttonGerarVerificar.addEventListener("click", ()=>{
+    let matriz = [[0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0],
+                  [0,0,0,0,0]]
+                  gerarMatriz()
+    function gerarMatriz(){
+        for(let i = 0; i < matriz.length; i++){
+            for(let j = 0; j < matriz.length; j++){
+                matriz[i][j] = gerarMatrizesalatorio(10, 0)
+            }
+        }
+        showMatrizDivi.textContent += `${matriz}`
+        verificar()
+    }
+    function gerarMatrizesalatorio(max, min){
+        let valor = Math.floor(Math.random() * (max - min + 1) + min)
+        return valor
+    }
+    function verificar(){
+        let soma = 0
+        for(let i = 0; i < matriz.length; i++){
+            for(let j = 0; j < matriz.length; j++){
+                if(matriz[i][j] % 3 == 0){
+                    soma += matriz[i][j]
+                }
+            }
+        }
+        showResu.textContent += `A soma dos números divisíveis por 3 foi de: ${soma}`
+    }
+})
